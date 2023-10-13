@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+}
+
+.navbar {
+    width: 1110px;
+    height: 70px;
+    border-radius: 0px 0px 8px 8px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 00px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center !important;
+}
+
+.navbar-brand {
+    color: #3e35f4;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 130px;
+
+}
+
+.nav-link {
+    color: #3e35f4;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+}
+
+.navbar-nav {
+    gap: 150px;
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 40px;
+}
+
+.our_gallery .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    orphans: 1;
+    widows: 1;
+}
+
+@media (max-width: 575px) {
+    .our_gallery .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+        orphans: 1;
+        widows: 1;
+    }
+}
+
+.our_gallery .card-columns .card {
+    border: 0px solid transparent;
+    margin-bottom: 15px;
+}
+
+.our_gallery .card-columns .card .card-img-top {
+    border-radius: 0;
+    border: 0px solid transparent;
+}
+
+.col-lg-6 {
+    padding: 8px;
+}
+
+.photo {
+    margin-top: 35px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 1.25rem;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 20px;
+}
